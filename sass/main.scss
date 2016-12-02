@@ -220,6 +220,9 @@ header {
   }
 }
 
+.padClassName{
+    padding: 0.5rem 2rem;
+}
 .content2 {
   h4 {
 //    font-size: $fs-1999;//??
@@ -229,7 +232,8 @@ header {
     padding: 0.5rem 2rem 1rem;
   }
   li {
-    padding: 0.5rem 2rem;
+//    padding: 0.5rem 2rem;
+    @extend .padClassName;
   }
 }
 
@@ -240,12 +244,14 @@ header {
 footer {
   h4 {
     font-size: $fs-1414;
-    padding: 0.5rem 2rem;
+    @extend .padClassName;
+//    padding: 0.5rem 2rem;
     color: $dark-brown;
   }
   p {
     font-size: $fs-1rem;
-    padding: 0.5rem 2rem;
+    @extend .padClassName;
+//    padding: 0.5rem 2rem;
     color: $dark-grey;
   }
   .fa-circle {
